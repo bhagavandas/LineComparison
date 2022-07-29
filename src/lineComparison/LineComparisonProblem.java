@@ -35,11 +35,17 @@ public class LineComparisonProblem {
 		double Length1= Math.sqrt(res);
 		System.out.println("Length of Line2 is: " + res);
 		
-		if(r==res) {
+		if(r==res && r>res) {
 			System.out.println("Two lines are equal");
 		}
 		else {
 			System.out.println("Two lines are not equal");
+		}
+		if(r>res) {
+			System.out.println("Line1 is greater than Line2");
+		}
+		else {
+			System.out.println("Line1 is less than Line2");
 		}
 	}
 }
